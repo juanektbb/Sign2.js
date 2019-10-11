@@ -3,26 +3,34 @@
 <head>
 
 	<title>Sign2.js</title>
-
-
 	<link href="styles.css" rel="stylesheet" />
 
 </head>
 <body>
 
+<!-- Modal Window of confirmation -->
+<div id="modalSign" class="modalSign">
+  	<div class="modalSign-content">
+  		<img id="sign2js-preview" src=""/>
+  		
+  		<div class="modalSign-options">
+	  		<button id="sign2js-cancel">Cancel</button>
+			<button id="sign2js-confirm">Confirm</button>
+		</div>
+  	</div>
+</div>
 
-	<div id="sign2js-container">
-		<canvas id="sign2js" width="298" height="140">
-			Get a better browser, bro.
-		</canvas>
+<!-- Signature canvas -->
+<h2>Sign2.js</h2>
+<div id="sign2js-container">
+	<canvas id="sign2js" width="298" height="140">
+		This browser doesn't support this program
+	</canvas>
 
-		<button id="sign2js-clear">Clear Signature</button>
-		<button id="sign2js-save">Save</button>
-	</div>
-
-	<img id="sig-image" src=""/>
-
-
+	<button id="sign2js-clear">Clear Signature</button>
+	<button id="sign2js-save">Save</button>
+</div>
+	
 </body>
 </html>
 
