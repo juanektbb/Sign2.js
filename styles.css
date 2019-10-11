@@ -1,0 +1,32 @@
+*{
+	box-sizing: border-box;
+}
+#sign2js-container{
+	width: 300px;
+}
+#sign2js-save, #sign2js-clear{
+	width: 148px;
+	border: none;
+	background-color: #CCCCCC;
+	color: #666;
+	padding: 6px;
+	margin: 0 auto 10px;
+}
+
+#sign2js-clear{
+	border-radius: 0 0 0 10px;
+	background-color: #fff;
+	border: 1px solid #CCCCCC;
+}
+#sign2js-save{
+	border-radius: 0 0 10px 0;
+	background-color: #c9eaff;
+	border: 1px solid #c9eaff;
+}
+
+#sign2js{
+  border: 1px dotted #CCCCCC;
+  border-radius: 10px 10px 0 0;
+  cursor: crosshair;
+  margin: 0;
+}
