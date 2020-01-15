@@ -2,24 +2,32 @@
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
-	font-family: Calibri, sans-serif;
+	font-family: 'Roboto', sans-serif;
+}
+body{
+	background-color: #f4f4f4;
 }
 h2{
 	text-align: center;
-	margin: 20px 0;
+	margin: 50px 0 20px;
 }
 #sign2js-container{
-	width: 300px;
+	width: 420px;
 	margin: 0 auto;
 }
-#sign2js-container img{
-	margin: 0 auto;
+#sign2js{
+	border: 1px dashed #999;
+	border-radius: 5px 5px 0 0;
+	cursor: crosshair;
+	background-color: #fff;
 }
+
+/* Underneath Buttons */
 #sign2js-save, #sign2js-clear{
-	width: 148px;
+	width: 208px;
 	border: none;
 	background-color: #CCCCCC;
-	padding: 6px;
+	padding: 12px;
 	margin: 0 auto 10px;
 	outline: none;
 	cursor: pointer;
@@ -28,13 +36,13 @@ h2{
 	border-radius: 0 0 0 5px;
 	color: #666;
 	background-color: #fff;
-	border: 1px solid #eee;
+	border: 1px solid #bbb;
 }
 #sign2js-save{
 	border-radius: 0 0 5px 0;
 	color: #fff;
-	background-color: #1f8dd6;
-	border: 1px solid #1f8dd6;
+	background-color: #2792d9;
+	border: 1px solid #2270ba;
 }
 #sign2js-clear:hover{
 	background-color: #eee;
@@ -43,16 +51,8 @@ h2{
 	background-color: #63b9f2;
 	border-color: #63b9f2;
 }
-#sign2js{
-	border: 1px dashed #CCCCCC;
-	border-radius: 5px 5px 0 0;
-	cursor: crosshair;
-}
-#sign2js-preview{
-	width: 100%;
-}
 
-/* MODALWINDOW */
+/* MODAL WINDOW */
 .modalSign{
 	display: none; 
 	position: fixed; 
@@ -62,32 +62,46 @@ h2{
 	width: 100%;
 	height: 100%; 
 	overflow: auto; 
-	background-color: rgba(0,0,0,0.6); 
+	background-color: rgba(0,0,0,0.9); 
 }
 .modalSign-content{
 	background-color: #fefefe;
-	margin: 20px auto 0;
+	margin: 30px auto 0;
 	border: 1px solid #000;
-	width: 320px;
+	text-align: center;
+	width: 518px;
 }
-.modalSign-options{
-	width: 100%;
-	display: flex;
+#modalSign-title{
+	margin: 15px 0;
+	font-size: 18px;
+	color: #2792d9;
 }
-.modalSign-options button{
-	width: 148px;
-	border: none;
-	padding: 6px;
-	outline: none;
-	cursor: pointer;
-	flex-basis: 50%;
+#sign2js-preview{
+	width: 418px;
 }
 #sign2js-cancel{
-	background-color: #d9534f;
+	color: #666;
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+	display: block;
+	margin: 10px auto 0;
+	font-size: 14px;
+}
+#sign2js-cancel:hover{
+	text-decoration: underline;
 }
 #sign2js-confirm{
+	width: 100%;
+	padding: 15px;
+	font-size: 16px;
+	outline: none;
+	cursor: pointer;
+	display: block;
+	margin-top: 10px;
 	color: white;
-	background-color: #1f8dd6;
+	background-color: #2792d9;
+	border: none;
 }
 #sign2js-confirm:hover{
 	background-color: #63b9f2;

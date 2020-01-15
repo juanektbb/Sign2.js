@@ -1,4 +1,4 @@
-//SYNTAX: Function runs right when it's created
+//Function runs right when it's created
 (function(){
 
     //Tell the browser to perform animation
@@ -21,17 +21,17 @@
 
     //Mouse/cursor features
     var drawing = false;
+    var lastPos = mousePos;
     var mousePos = {
         x: 0,
         y: 0
     };
-    var lastPos = mousePos;
 
 
     /******************************
             EVENT LISTENERS
     ******************************/
-    /* COMPUTER EVENTS */
+    /* DESKTOP EVENTS */
     //Click on canvas
     canvas.addEventListener("mousedown", function(e){
         drawing = true;

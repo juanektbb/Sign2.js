@@ -1,33 +1,31 @@
 <!DOCTYPE html>
 <html>
 <head>
-
 	<title>Sign2.js</title>
-	<link href="styles.css" rel="stylesheet" />
-
+	<link href="styles.css" rel="stylesheet"/>
+	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet"> 
 </head>
 <body>
 
 <!-- Modal Window of confirmation -->
 <div id="modalSign" class="modalSign">
   	<div class="modalSign-content">
+  		<div id="modalSign-title">Save this signature</div>
   		<img id="sign2js-preview" src=""/>
-  		
-  		<div class="modalSign-options">
-	  		<button id="sign2js-cancel">Cancel</button>
-			<button id="sign2js-confirm">Confirm</button>
-		</div>
+
+		<button id="sign2js-cancel">Cancel</button>
+		<button id="sign2js-confirm">Confirm</button>
   	</div>
 </div>
 
 <!-- Signature canvas -->
 <h2>Sign2.js</h2>
 <div id="sign2js-container">
-	<canvas id="sign2js" width="298" height="140">
+	<canvas id="sign2js" width="418" height="200">
 		This browser doesn't support this program
 	</canvas>
 
-	<button id="sign2js-clear">Clear Signature</button>
+	<button id="sign2js-clear">Clear signature</button>
 	<button id="sign2js-save">Save</button>
 </div>
 	
